@@ -12,7 +12,12 @@ require('dotenv').config();
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors());
+
+// Configure CORS to allow requests from your frontend domain
+app.use(cors({
+  origin: 'https://init-frontend.vercel.app'
+}));
+
 app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
