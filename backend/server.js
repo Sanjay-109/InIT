@@ -27,13 +27,6 @@ app.use((req, res, next) => {
 });
 
 // routes 
-// Handle preflight requests for the /login endpoint
-app.options('/login', (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://init-frontend.vercel.app/login');
-    res.setHeader('Access-Control-Allow-Methods', 'POST');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.sendStatus(200);
-});
 
 app.use('/', InITRoutes);
 app.use('/', pdfRoutes);
