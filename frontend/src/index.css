@@ -1,0 +1,627 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #04002b; 
+}
+
+.navbar-brand {
+  flex-grow: 1; 
+  min-width: calc(100% / 15); 
+  color: #FFF ; 
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+}
+
+/* IntroPage Styles */
+.intro-page {
+  display: flex;
+  height: 100vh;
+}
+
+.init {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.content {
+  flex: 2;
+  background-color: #FFF;
+  color: #04002b; 
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+.intro_content {
+  margin-right: 200px;
+  color:#04002b;
+}
+
+.content h1 {
+  font-size: 80px;
+  align-self: center;
+}
+
+.buttons {
+  flex: 1;
+  background-color: #04002b; 
+  color: #FFF; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.buttons h1 {
+  color: #FFF; 
+}
+
+.buttons button {
+  background-color: #FFF; 
+  color: #04002b; 
+  margin-top: 10px;
+  padding: 15px 50px; 
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; 
+  font-size: 18px; 
+}
+
+
+.buttons button:hover {
+  background-color: #CCC;
+}
+
+
+
+
+/* Page content styles */
+.page-content {
+  padding: 20px;
+}
+
+.page-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form styles */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #04002b;
+  color: #FFF;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #130292;
+}
+
+/* Redirect link styles */
+.redirect-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.redirect-link a {
+  color: #04002b;
+  text-decoration: underline;
+}
+
+.redirect-link a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+
+.homehead {
+  margin: auto;
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #04002b;
+  justify-content: space-between;
+  color: #FFF;
+  text-align: center;
+  padding: 1em;
+}
+
+.title {
+    font-size: 30px;
+}
+.dash {
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 300px;
+}
+
+.dash h1 {
+  text-align: center;
+}
+
+.nav {
+  background-color: #04002b;
+  color: #FFF;
+  text-align: center;
+}
+
+.nav-link {
+  color: #FFF;
+  text-decoration: none;
+  padding: 1.5em;
+  margin: 0 1em;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-linkc{
+  color: #FFF;
+  text-decoration: none;
+  background-color: #0a014e;
+  padding: 1.5em;
+  margin: 0 1em;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #0a014e;
+}
+
+.content {
+  background-size: cover;
+  color: #04002b;
+  background-color: #FFF;
+  text-align: center;
+  padding: 5em;
+}
+
+h2 {
+  color: #04002b;
+}
+
+.highlight {
+  color: #130292;
+  font-weight: bold;
+}
+
+/*courses*/
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFF;
+  margin-bottom: 80px;
+}
+
+.course-box {
+  width: 400px;
+  height: 250px; 
+  margin: 20px;
+  background-color: #FFF;
+  border-radius: 15px; /* Curved edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow */
+  display: flex;
+  flex-direction: column; /* Stack image on top of text */
+  align-items: center; /* Center align content */
+  text-align: center; /* Center align text */
+}
+
+.course-box img {
+  width: 250px;
+  height: 150px; 
+  margin-top: 20px; 
+}
+
+.course-box h2 {
+  font-size: 20px;
+  margin-top: 10px; /* Add spacing between text and image */
+}
+
+/*OS*/
+.os-page {
+  padding: 20px;
+  text-align: center; 
+  background-color: #FFF;
+}
+
+.os-page h2{
+  font-size: 40px;
+}
+
+.Books {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.Books h2 {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.Books h3{
+  color: #04002b;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+.book-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.book-box {
+  background-color: #FFF;
+  color: #04002b;
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Align items vertically */
+  width: calc(100% - 2cm); /* Adjust width */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space between each book */
+  margin-left: 10px; /* Add left margin */
+}
+
+.book-box h3 {
+  color: #04002b;
+  margin: 0; /* Remove default margin */
+}
+
+.button-container {
+  margin-left: auto; /* Push the button to the right */
+}
+
+.book-info {
+  margin-right: 20px; /* Adjust margin between elements */
+}
+
+.book-info h3,
+.book-info .author,
+.book-info .edition {
+  margin: 5px 0; /* Adjust margin */
+}
+
+.book-info .author,
+.book-info .edition {
+  text-align: left;
+  font-size: smaller;
+}
+
+.download-button {
+  padding: 10px 20px; 
+  font-size: 18px; 
+  background-color: #04002b;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Remove border for a cleaner look */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0d016a;
+}
+
+.upload-box {
+    border: 1px solid #CCC;
+}
+
+.book-upload {
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+
+.upload-box h2{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.upload-book {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px; /* Adjust width */
+  margin-top: 20px; /* Adjust margin */
+  display: flex; /* Display items in a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+.upload-button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px; 
+  font-size: 18px; 
+  background-color: #04002b;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Remove border for a cleaner look */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover{
+    background-color: #0d016a;
+}
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.input-group label {
+  flex: 1 0 150px; /* Adjust label width */
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="file"] {
+  flex: 2 0 calc(100% - 170px); /* Adjust input field width */
+  padding: 10px;
+  margin-left: 10px; /* Add margin between input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group input[type="file"] {
+  flex-basis: calc(100% - 170px); /* Adjust file input width */
+  margin-left: 10px; /* Add margin between input fields */
+}
+
+/*DBMS*/
+.dbms-page {
+  padding: 20px;
+  text-align: center; /* Center the title */
+}
+
+/*DSA*/
+.dsa-page {
+  padding: 20px;
+  text-align: center; /* Center the title */
+}
+
+/*CN*/
+.cn-page {
+  padding: 20px;
+  text-align: center; /* Center the title */
+}
+
+/*CA*/
+.ca-page {
+  padding: 20px;
+  text-align: center; /* Center the title */
+}
+
+.footer {
+  background-color: #04002b;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/*Admin Page*/
+/* Enhancements to Admin Page CSS */
+
+.Admin-Page {
+  padding: 20px;
+  text-align: center; 
+  background-color: #FFF;
+  margin-bottom: 100px;
+}
+
+.Admin-Books {
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px; /* Add some top margin for separation */
+}
+
+.Admin-Books h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px; /* Add some bottom margin for separation */
+}
+
+.abook-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.abook-box {
+  background-color: #FFF;
+  color: #04002b;
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Align items vertically */
+  width: calc(100% - 2cm); /* Adjust width */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px 20px; /* Add more padding */
+  margin-bottom: 20px; /* Add space between each book */
+  margin-left: 10px; /* Add left margin */
+}
+
+.abook-box h3 {
+  color: #04002b;
+  margin: 0; /* Remove default margin */
+}
+
+.abook-box .button-container {
+  display: flex;
+}
+
+.view-button,
+.delete-button {
+  color: #FFF;
+  background-color: #04002b;
+  border-radius: 5px;
+  padding: 10px 20px; /* Add more padding */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Add smooth transition */
+  margin-left: 10px;
+}
+
+.view-button:hover {
+  background-color: #0d016a; /* Darken background color on hover */
+}
+
+.delete-button:hover {
+  background-color: #7a0303;
+}
+
+.certification-page {
+  padding: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certification-page h1 {
+  color: #04002b;
+}
+
+.certification-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkers {
+  flex: 1;
+  background-color: #FFF; 
+  color: #04002b; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+
+.linkers h2{
+  color:#04002b;
+}
+
+.linkers div{
+  align-self: left;
+}
+
+.linker-button {
+  padding: 8px 16px;
+  background-color: #04002b;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkers {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.linkers h2 {
+  align-self: flex-start;
+}
+
+.linker-button {
+  background-color: #04002b;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+a.view-button {
+  text-decoration: none;
+}
+
+.details{
+  margin-left: 20px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.details h5{
+  display:inline;
+  margin-right: 30px;
+}
+
+.linker-button:hover {
+  background-color: #0a014e;
+}
+
