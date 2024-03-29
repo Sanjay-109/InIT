@@ -27,10 +27,6 @@ app.use((req, res, next) => {
 });
 
 // routes 
-app.use('/', InITRoutes);
-app.use('/', pdfRoutes);
-app.use('/', AdminRoutes);
-
 // Handle preflight requests for the /login endpoint
 app.options('/login', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', 'https://init-frontend.vercel.app/login');
@@ -38,6 +34,12 @@ app.options('/login', (req, res) => {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     res.sendStatus(200);
 });
+
+app.use('/', InITRoutes);
+app.use('/', pdfRoutes);
+app.use('/', AdminRoutes);
+
+
 
 // Connect to DB 
 mongoose.connect(process.env.MONGO_URI)
