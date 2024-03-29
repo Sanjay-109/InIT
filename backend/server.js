@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // Configure CORS to allow requests from your frontend domain
 app.use(cors({
-  origin: 'https://localhost:3000',
+  origin: 'https://init-frontend.vercel.app',
   methods: ['GET', 'POST', 'DELETE'], // Adjust as needed
   allowedHeaders: ['Content-Type', 'Authorization'] // Adjust as needed
 }));
