@@ -14,14 +14,13 @@ const app = express();
 app.use(bodyParser.json());
 
 // Configure CORS to allow requests from your frontend domain
-
 app.use(cors({
   origin: 'https://init-frontend.vercel.app',
   methods: ['GET', 'POST', 'DELETE'], // Adjust as needed
   allowedHeaders: ['Content-Type', 'Authorization'] // Adjust as needed
 }));
 
-
+// Log requests
 app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
@@ -31,6 +30,9 @@ app.use((req, res, next) => {
 app.use('/', InITRoutes);
 app.use('/', pdfRoutes);
 app.use('/', AdminRoutes);
+
+// Handle preflight requests for the /login endpoint
+app.options('/login', cors()); // This sets up the OPTIONS route handler for /login with CORS middleware
 
 // Connect to DB 
 mongoose.connect(process.env.MONGO_URI)
