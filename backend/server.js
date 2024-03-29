@@ -32,7 +32,12 @@ app.use('/', pdfRoutes);
 app.use('/', AdminRoutes);
 
 // Handle preflight requests for the /login endpoint
-app.options('/login', cors()); // This sets up the OPTIONS route handler for /login with CORS middleware
+app.options('/login', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://init-frontend.vercel.app');
+    res.setHeader('Access-Control-Allow-Methods', 'POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.sendStatus(200);
+});
 
 // Connect to DB 
 mongoose.connect(process.env.MONGO_URI)
