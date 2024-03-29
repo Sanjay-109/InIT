@@ -8,31 +8,23 @@ const bodyParser = require('body-parser');
 const Grid = require('gridfs-stream');
 const base64 = require('base64-js');
 require('dotenv').config();
+const path = require("path");
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, "build"))); // put this line of code in app.js
+
 app.use(bodyParser.json());
-
-// Configure CORS to allow requests from your frontend domain
-app.use(cors({
-  origin: 'https://init-frontend.vercel.app',
-  methods: ['GET', 'POST', 'DELETE'], // Adjust as needed
-  allowedHeaders: ['Content-Type', 'Authorization'] // Adjust as needed
-}));
-
-// Log requests
+app.use(cors());
 app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
 });
 
 // routes 
-
 app.use('/', InITRoutes);
 app.use('/', pdfRoutes);
 app.use('/', AdminRoutes);
-
-
 
 // Connect to DB 
 mongoose.connect(process.env.MONGO_URI)
