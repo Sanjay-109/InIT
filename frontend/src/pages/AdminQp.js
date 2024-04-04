@@ -113,7 +113,7 @@ function AdminQp() {
     return (
         <div>
             <header className="header">
-                <h1>InIT E-Learning</h1>
+                <h1>InIT</h1>
                     <nav className="nav">
                     <Link to="/admin" className="nav-link">Books</Link>
                     <Link to="/admincourses" className="nav-link">Courses</Link>

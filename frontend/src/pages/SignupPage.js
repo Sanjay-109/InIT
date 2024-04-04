@@ -11,7 +11,11 @@ const SignupPage = () => {
   const navigate = useNavigate();
 
   const handleRollNumberChange = (event) => {
-    setRollNumber(event.target.value);
+    const value = event.target.value;
+   
+    if (/^\d*$/.test(value) || value === '') {
+      setRollNumber(value);
+    }
   };
 
   const handleEmailChange = (event) => {
@@ -24,16 +28,30 @@ const SignupPage = () => {
 
   const handleSignup = async () => {
     try {
+       
+      if (!rollNumber || !email || !password) {
+        console.error("All fields are required");
+        return;
+      }
+
+       
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        console.error("Invalid email address");
+        return;
+      }
+
+      
       await axios.post(`${API_BASE_URL}/signup`, {
         rollNumber,
         email,
         password,
       });
-      // Redirect to home page after successful signup
+
       navigate('/home');
     } catch (error) {
       console.error(error.response.data.message);
-      // Display error message to the user
+       
     }
   };
 
