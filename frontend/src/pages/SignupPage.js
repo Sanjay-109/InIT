@@ -30,14 +30,14 @@ const SignupPage = () => {
     try {
        
       if (!rollNumber || !email || !password) {
-        console.error("All fields are required");
+        alert("All fields are required");
         return;
       }
 
        
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        console.error("Invalid email address");
+        alert("Invalid email address");
         return;
       }
 
