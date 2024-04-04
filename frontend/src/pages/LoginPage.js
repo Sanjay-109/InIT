@@ -12,7 +12,13 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handlerollNumberChange = (event) => {
-    setrollNumber(event.target.value);
+    const value = event.target.value;
+   
+    if (/^\d*$/.test(value) || value === '') {
+      setrollNumber(value);
+    } else {
+      alert("Only Numbers are allowed");
+    }
   };
 
   const handlePasswordChange = (event) => {
@@ -42,6 +48,7 @@ const LoginPage = () => {
         navigate('/home');
       }
     } catch (error) {
+      alert("Roll number or password incorrect");
       console.error(error.response.data.message);
       // Display error message to the user
     }
