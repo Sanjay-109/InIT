@@ -15,6 +15,8 @@ const SignupPage = () => {
    
     if (/^\d*$/.test(value) || value === '') {
       setRollNumber(value);
+    } else {
+      alert("Only Numbers are allowed");
     }
   };
 
