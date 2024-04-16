@@ -31,7 +31,7 @@ function DBMScourse() {
                 <div className='dash'>
                     <h1>Database Management Systems</h1>
                     <nav className="nav">
-                    <Link to="/home" className="nav-link">Home</Link> 
+                    <Link to="/" className="nav-link">Home</Link> 
                     <Link to="/dbms" className="nav-link">Books</Link>
                     <Link to="/dbmscourse" className="nav-linkc">Courses</Link>
                     <Link to="/dbmsqp" className="nav-link">Question papers</Link>

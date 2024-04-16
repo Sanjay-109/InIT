@@ -87,7 +87,7 @@ function CAPage() {
                 <div className='dash'>
                     <h1>Computer Architecture</h1>
                     <nav className="nav">
-                    <Link to="/home" className="nav-link">Home</Link> 
+                    <Link to="/" className="nav-link">Home</Link> 
                     <Link to="/ca" className="nav-linkc">Books</Link>
                     <Link to="/cacourse" className="nav-link">Courses</Link>
                     <Link to="/caqp" className="nav-link">Question papers</Link>

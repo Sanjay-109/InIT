@@ -87,7 +87,7 @@ function OSQp() {
                 <div className='dash'>
                     <h1>Operating Systems</h1>
                     <nav className="nav">
-                        <Link to="/home" className="nav-link">Home</Link> 
+                        <Link to="/" className="nav-link">Home</Link> 
                         <Link to="/os" className="nav-link">Books</Link>
                         <Link to="/oscourse" className="nav-link">Courses</Link>
                         <Link to="/osqp" className="nav-linkc">Question papers</Link>

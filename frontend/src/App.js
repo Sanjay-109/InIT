@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Pages & Components
-import IntroPage from './pages/IntroPage'
-import LoginPage from './pages/LoginPage'
-import SignupPage from './pages/SignupPage'
+// import IntroPage from './pages/IntroPage'
+// import LoginPage from './pages/LoginPage'
+// import SignupPage from './pages/SignupPage'
 import HomePage from './pages/HomePage'
 import OSPage from './pages/OSPage'
 import OScourse from './pages/OScourse'
@@ -30,13 +30,13 @@ function App() {
       <BrowserRouter>
         <div className='pages'>
           <Routes>
-            <Route path='/' element={<IntroPage/>}/>
-            <Route path='/login' element={<LoginPage/>}/>
-            <Route path='/signup' element={<SignupPage/>}/>
+            <Route path='/' element={<HomePage/>}/>
+            {/* <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/signup' element={<SignupPage/>}/> */}
             <Route path='/admin' element={<AdminPage/>}/>
             <Route path='/adminqps' element={<AdminQp/>}/>
             <Route path='/admincourses' element={<AdminCourses/>}/>
-            <Route path='/home' element={<HomePage/>}/>
+            {/* <Route path='/home' element={<HomePage/>}/> */}
             <Route path='/os' element={<OSPage/>}/>
             <Route path='/dbms' element={<DBMSPage/>}/>
             <Route path='/cn' element={<CNPage/>}/>

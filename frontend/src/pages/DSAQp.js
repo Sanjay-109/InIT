@@ -87,7 +87,7 @@ function DSAQp() {
                 <div className='dash'>
                     <h1>Data Structures and Algorithms</h1>
                     <nav className="nav">
-                    <Link to="/home" className="nav-link">Home</Link> 
+                    <Link to="/" className="nav-link">Home</Link> 
                     <Link to="/dsa" className="nav-link">Books</Link>
                     <Link to="/dsacourse" className="nav-link">Courses</Link>
                     <Link to="/dsaqp" className="nav-linkc">Question papers</Link>

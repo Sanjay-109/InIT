@@ -31,7 +31,7 @@ function CNcourse() {
                 <div className='dash'>
                     <h1>Computer Networks</h1>
                     <nav className="nav">
-                    <Link to="/home" className="nav-link">Home</Link> 
+                    <Link to="/" className="nav-link">Home</Link> 
                     <Link to="/cn" className="nav-link">Books</Link>
                     <Link to="/cncourse" className="nav-linkc">Courses</Link>
                     <Link to="/cnqp" className="nav-link">Question papers</Link>
