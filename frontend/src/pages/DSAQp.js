@@ -124,7 +124,11 @@ function DSAQp() {
                             </div>
                             <div className="input-group">
                                 <label>Enter Category</label>
-                                <input type="text" placeholder="End Sem/Assessment" name='category' value={category} onChange={handleCategoryChange} />
+                                <select name="category" value={category} onChange={handleCategoryChange}>
+                                    <option value="Assessment 1">Assessment 1</option>
+                                    <option value="Assessment 2">Assessment 2</option>
+                                    <option value="End Semester">End Semester</option>
+                                </select>
                             </div>
                             <div className="input-group">
                                 <label>Enter Year</label>
@@ -138,6 +142,7 @@ function DSAQp() {
                         </div>
                     </div>
                 </div>
+
 
                 
             </div>
