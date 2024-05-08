@@ -9,7 +9,7 @@ function OScourse() {
     useEffect(() => {
         const fetchCourseData = async () => {
             try {
-                const response = await axios.get(`${API_BASE_URL}/view-courses`);
+                const response = await axios.get(`${API_BASE_URL}/fetch-courses/OSC`);
                 setCourseData(response.data);
             } catch (error) {
                 console.error('Error fetching Course data:', error);
