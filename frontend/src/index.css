@@ -454,7 +454,7 @@ h2 {
 .input-group select,
 .input-group input[type="text"],
 .input-group input[type="file"] {
-  flex: 2 0 calc(100% - 170px); /* Adjust input field width */
+  flex: 2 0 calc(100% - 130px); /* Adjust input field width */
 }
 
 /* Add hover effect for select field */
