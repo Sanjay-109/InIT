@@ -431,6 +431,39 @@ h2 {
   margin-left: 10px; /* Add margin between input fields */
 }
 
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #FFF; /* Add background color */
+  color: #04002b; /* Set text color */
+}
+
+.input-group select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #130292; /* Change border color on focus */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-group select,
+.input-group input[type="text"],
+.input-group input[type="file"] {
+  flex: 2 0 calc(100% - 170px); /* Adjust input field width */
+}
+
+/* Add hover effect for select field */
+.input-group select:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+
 /*DBMS*/
 .dbms-page {
   padding: 20px;
